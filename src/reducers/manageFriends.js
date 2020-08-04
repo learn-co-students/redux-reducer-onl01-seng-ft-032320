@@ -8,7 +8,7 @@ let j = state.friends.findIndex(person => person.name === "Joe")
         case 'ADD_FRIEND':
             return { friends: [...state.friends, action.friend]}
         case "REMOVE_FRIEND":
-            return{friends: [...state.friends.slice(0,j),...state.friends.slice(2)]}
+            return{friends: [...state.friends.slice(0,1),...state.friends.slice(2)]}
         default:
             return state;
     }
